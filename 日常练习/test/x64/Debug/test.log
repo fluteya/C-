@@ -1,2 +1,3 @@
 ﻿  FileName.cpp
-  test.vcxproj -> C:\Users\15719\Desktop\code\C\test\x64\Debug\test.exe
+  LINK : 没有找到 C:\Users\15719\Desktop\mygithub\C\日常练习\x64\Debug\test.exe 或上一个增量链接没有生成它；正在执行完全链接
+  test.vcxproj -> C:\Users\15719\Desktop\mygithub\C\日常练习\x64\Debug\test.exe

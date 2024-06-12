@@ -1,2 +1,6 @@
 ﻿  game.c
-  game.vcxproj -> C:\Users\15719\Desktop\code\C\game\x64\Debug\game.exe
+  test.c
+  正在生成代码...
+C:\Users\15719\Desktop\mygithub\C\三子棋\game\game.c(56,1): warning C4716: “check_win”: 必须返回一个值
+  LINK : 没有找到 C:\Users\15719\Desktop\mygithub\C\三子棋\x64\Debug\game.exe 或上一个增量链接没有生成它；正在执行完全链接
+  game.vcxproj -> C:\Users\15719\Desktop\mygithub\C\三子棋\x64\Debug\game.exe

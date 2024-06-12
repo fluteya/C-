@@ -1,17 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\15719\\Desktop\\code\\C\\game\\",
+  "WorkspaceRootPath": "C:\\Users\\15719\\Desktop\\mygithub\\C\\\u4E09\u5B50\u68CB\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{80F7144C-C172-45A2-9497-A2B143927830}|game\\game.vcxproj|C:\\Users\\15719\\Desktop\\code\\C\\game\\game\\game.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{80F7144C-C172-45A2-9497-A2B143927830}|game\\game.vcxproj|C:\\Users\\15719\\Desktop\\mygithub\\C\\\u4E09\u5B50\u68CB\\game\\game.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{80F7144C-C172-45A2-9497-A2B143927830}|game\\game.vcxproj|solutionrelative:game\\game.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80F7144C-C172-45A2-9497-A2B143927830}|game\\game.vcxproj|C:\\Users\\15719\\Desktop\\code\\C\\game\\game\\game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{80F7144C-C172-45A2-9497-A2B143927830}|game\\game.vcxproj|C:\\Users\\15719\\Desktop\\mygithub\\C\\\u4E09\u5B50\u68CB\\game\\game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{80F7144C-C172-45A2-9497-A2B143927830}|game\\game.vcxproj|solutionrelative:game\\game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{80F7144C-C172-45A2-9497-A2B143927830}|game\\game.vcxproj|C:\\Users\\15719\\Desktop\\code\\C\\game\\game\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{80F7144C-C172-45A2-9497-A2B143927830}|game\\game.vcxproj|C:\\Users\\15719\\Desktop\\mygithub\\C\\\u4E09\u5B50\u68CB\\game\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{80F7144C-C172-45A2-9497-A2B143927830}|game\\game.vcxproj|solutionrelative:game\\test.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -28,9 +28,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "test.c",
-              "DocumentMoniker": "C:\\Users\\15719\\Desktop\\code\\C\\game\\game\\test.c",
+              "DocumentMoniker": "C:\\Users\\15719\\Desktop\\mygithub\\C\\\u4E09\u5B50\u68CB\\game\\test.c",
               "RelativeDocumentMoniker": "game\\test.c",
-              "ToolTip": "C:\\Users\\15719\\Desktop\\code\\C\\game\\game\\test.c",
+              "ToolTip": "C:\\Users\\15719\\Desktop\\mygithub\\C\\\u4E09\u5B50\u68CB\\game\\test.c",
               "RelativeToolTip": "game\\test.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
@@ -41,9 +41,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "game.c",
-              "DocumentMoniker": "C:\\Users\\15719\\Desktop\\code\\C\\game\\game\\game.c",
+              "DocumentMoniker": "C:\\Users\\15719\\Desktop\\mygithub\\C\\\u4E09\u5B50\u68CB\\game\\game.c",
               "RelativeDocumentMoniker": "game\\game.c",
-              "ToolTip": "C:\\Users\\15719\\Desktop\\code\\C\\game\\game\\game.c",
+              "ToolTip": "C:\\Users\\15719\\Desktop\\mygithub\\C\\\u4E09\u5B50\u68CB\\game\\game.c",
               "RelativeToolTip": "game\\game.c",
               "ViewState": "AQIAACoAAAAAAAAAAAAAADkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
@@ -54,9 +54,9 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "game.h",
-              "DocumentMoniker": "C:\\Users\\15719\\Desktop\\code\\C\\game\\game\\game.h",
+              "DocumentMoniker": "C:\\Users\\15719\\Desktop\\mygithub\\C\\\u4E09\u5B50\u68CB\\game\\game.h",
               "RelativeDocumentMoniker": "game\\game.h",
-              "ToolTip": "C:\\Users\\15719\\Desktop\\code\\C\\game\\game\\game.h",
+              "ToolTip": "C:\\Users\\15719\\Desktop\\mygithub\\C\\\u4E09\u5B50\u68CB\\game\\game.h",
               "RelativeToolTip": "game\\game.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",

@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include<windows.h>
 #include<math.h>
+#include <time.h>
 
 //enum sex {
 //	male,
@@ -431,7 +432,65 @@
 //}
 
 //截断和整型提升
-int main() {
-	char a = -100;
-	printf("%d", a);
+//int main() {
+//	char a = -100;
+//	printf("%d", a);
+//}
+
+//快速排序
+
+void Quicksort(int a[], int sz,int left,int right) {
+	if (sz == 1 || sz == 0) {
+		return;
+	}
+	
+	int pivot = a[left];
+	int index = left;
+	for (int i = left + 1; i < right + 1; i++) {
+		if (a[index] > a[i]) {
+			if (i - index == 1) {
+				printf("ss");
+				int temp = pivot;
+				a[index] = a[i];
+				a[i] = temp;
+				index = index + 1;
+			}
+			else {
+				int temp = a[i];
+				for (int g = i; g > index; g--) {
+					a[g] = a[g - 1];
+				}
+				a[index] = temp;
+				index = index + 1;
+			}
+		}
+		
+		
+	
+	}
+	Quicksort(a, index - left, left, index - 1);
+	Quicksort(a, right - index, index + 1, right);
+
+
 }
+
+int main() {
+
+	srand((unsigned int)time(NULL));
+	int sz = 10;
+	int a[30] = {44, 90, 58, 27, 12, 98, 23, 85, 93, 26};
+	for (int i = 0; i < sz; i++) {
+		//a[i] = rand() % 100;
+		printf("%d ", a[i]);
+	}
+	printf("\n");
+
+	Quicksort(a, sz,0,sz-1);
+
+	for (int i = 0; i < sz; i++) {
+		printf("%d ", a[i]);
+	}
+
+
+}
+

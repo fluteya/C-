@@ -439,58 +439,208 @@
 
 //快速排序
 
-void Quicksort(int a[], int sz,int left,int right) {
-	if (sz == 1 || sz == 0) {
-		return;
-	}
-	
-	int pivot = a[left];
-	int index = left;
-	for (int i = left + 1; i < right + 1; i++) {
-		if (a[index] > a[i]) {
-			if (i - index == 1) {
-				printf("ss");
-				int temp = pivot;
-				a[index] = a[i];
-				a[i] = temp;
-				index = index + 1;
-			}
-			else {
-				int temp = a[i];
-				for (int g = i; g > index; g--) {
-					a[g] = a[g - 1];
-				}
-				a[index] = temp;
-				index = index + 1;
-			}
-		}
-		
-		
-	
-	}
-	Quicksort(a, index - left, left, index - 1);
-	Quicksort(a, right - index, index + 1, right);
+//void Quicksort(int a[], int sz,int left,int right) {
+//	if (sz == 1 || sz == 0) {
+//		return;
+//	}
+//	
+//	int pivot = a[left];
+//	int index = left;
+//	for (int i = left + 1; i < right + 1; i++) {
+//		if (a[index] > a[i]) {
+//			if (i - index == 1) {
+//				printf("ss");
+//				int temp = pivot;
+//				a[index] = a[i];
+//				a[i] = temp;
+//				index = index + 1;
+//			}
+//			else {
+//				int temp = a[i];
+//				for (int g = i; g > index; g--) {
+//					a[g] = a[g - 1];
+//				}
+//				a[index] = temp;
+//				index = index + 1;
+//			}
+//		}
+//		
+//		
+//	
+//	}
+//	Quicksort(a, index - left, left, index - 1);
+//	Quicksort(a, right - index, index + 1, right);
+//
+//
+//}
+//
+//int main() {
+//
+//	srand((unsigned int)time(NULL));
+//	int sz = 10;
+//	int a[30] = {44, 90, 58, 27, 12, 98, 23, 85, 93, 26};
+//	for (int i = 0; i < sz; i++) {
+//		//a[i] = rand() % 100;
+//		printf("%d ", a[i]);
+//	}
+//	printf("\n");
+//
+//	Quicksort(a, sz,0,sz-1);
+//
+//	for (int i = 0; i < sz; i++) {
+//		printf("%d ", a[i]);
+//	}
+//
+//
+//}
+// ////多升序数组排序（未完成）
+//int minimum(int a, int b, int c) {
+//	int d = a;
+//	if (d > b) {
+//		d = b;
+//	}
+//	if (d > c) {
+//		d = c;
+//	}
+//	return d;
+//}
 
+//void combine(int a[], int b[], int c[], int d[]) {
+//	int x = 0;
+//	int y = 0;
+//	int z = 0;
+//	for (int i = 0; i < 15; i++) {
+//		int h = minimum(a[x], b[y], c[z]);
+//		if (h == a[x] && x < 4) {
+//			x = x + 1;
+//		} else if (h == b[y] && y < 4) {
+//			y = y + 1;
+//		} else  {
+//			if (z < 4) {
+//				z = z + 1;
+//			}
+//		}
+//		d[i] = h;
+//	}
+//	
+//
+//}
+//
+//int main() {
+//	int a[5] = { 0 };
+//	int b[5] = { 0 };
+//	int c[5] = { 0 };
+//	int d[15] = { 0 };
+//	//输入升序数组
+//	for (int i = 0; i < 5; i++) {
+//		scanf("%d", &a[i]);
+//	}
+//	for (int i = 0; i < 5; i++) {
+//		scanf("%d", &b[i]);
+//	}
+//	for (int i = 0; i < 5; i++) {
+//		scanf("%d", &c[i]);
+//	}
+//
+//
+//	//
+//	combine(a, b, c, d);
+//	for (int i = 0; i < 15; i++) {
+//		printf("%d", d[i]);
+//	}
+//	
+//}
 
-}
+//反转链表
+/**
+ * struct ListNode {
+ *	int val;
+ *	struct ListNode *next;
+ * };
+ */
+ /**
+  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+  *
+  *
+  * @param head ListNode类
+  * @return ListNode类
+  */
+//struct ListNode* ReverseList(struct ListNode* head) {
+//    // write code here
+//    int sz = 0;
+//    struct ListNode* prev = NULL;
+//    struct ListNode* node = head;
+//    struct ListNode* next = head->next;
+//    while (node != NULL) {
+//        node->next = prev;
+//        prev = node;
+//        node = next;
+//        next = next->next;
+//    }
+//
+//    return prev;
+//}
 
-int main() {
-
-	srand((unsigned int)time(NULL));
-	int sz = 10;
-	int a[30] = {44, 90, 58, 27, 12, 98, 23, 85, 93, 26};
-	for (int i = 0; i < sz; i++) {
-		//a[i] = rand() % 100;
-		printf("%d ", a[i]);
-	}
-	printf("\n");
-
-	Quicksort(a, sz,0,sz-1);
-
-	for (int i = 0; i < sz; i++) {
-		printf("%d ", a[i]);
-	}
-
-
-}
-
+//区间反转链表
+/**
+ * struct ListNode {
+ *	int val;
+ *	struct ListNode *next;
+ * };
+ */
+ /**
+  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+  *
+  *
+  * @param head ListNode类
+  * @param m int整型
+  * @param n int整型
+  * @return ListNode类
+  */
+//struct ListNode* reverseBetween(struct ListNode* head, int m, int n) {
+//    if (m == n) {
+//        return head;
+//    }
+//    int a = 1;
+//    struct ListNode* beforestart = NULL;
+//    struct ListNode* start = head;
+//    struct ListNode* node = head;
+//
+//    while (a < m) {
+//        if (a == m - 1) {
+//            beforestart = node;
+//            node = node->next;
+//            start = node;
+//            a++;
+//            break;
+//        }
+//        node = node->next;
+//        a++;
+//    }
+//    struct ListNode* prev = node;
+//    node = node->next;
+//    struct ListNode* next = node->next;
+//    while (a < n) {
+//        node->next = prev;
+//        if (a != n) {
+//            prev = node;
+//            node = next;
+//            next = node->next;
+//        }
+//        a++;
+//    }
+//
+//    if (beforestart != NULL) {
+//        beforestart->next = prev;
+//    }
+//    //printf("%d",next->val);
+//    start->next = node;
+//    if (m == 1) {
+//        return prev;
+//    }
+//    else {
+//        return head;
+//    }
+//
+//    // write code here
+//}

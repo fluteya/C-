@@ -644,3 +644,94 @@
 //
 //    // write code here
 //}
+
+//二分查找
+//int search(int* nums, int numsLen, int target) {
+//    int a = 0;
+//    int len = numsLen;
+//    int pointer = numsLen / 2;
+//    while (len != 0) {
+//        len = len / 2;
+//        a = nums[pointer];
+//        if (a == target) {
+//            break;
+//        }
+//        else if (a > target) {
+//            pointer = pointer - len / 2;
+//            if (len / 2 == 0) {
+//                pointer = pointer - 1;
+//            }
+//        }
+//        else {
+//            pointer = pointer + len / 2;
+//            if (len / 2 == 0) {
+//                pointer = pointer + 1;
+//            }
+//        }
+//
+//    }
+//    if (nums[pointer] == target) {
+//        return pointer;
+//    }
+//    else {
+//        return -1;
+//    }
+//
+//
+//
+//    // write code here
+//}
+
+
+//二分查找之找峰值
+//int checkpeak(int a, int* nums, int sz) {
+//    if (a == 0 && nums[a] > nums[a + 1]) {
+//        return 1;
+//    }
+//    else if (a == sz - 1 && nums[a] > nums[a - 1]) {
+//        return 1;
+//    }
+//    else if (nums[a] > nums[a - 1] && nums[a] > nums[a + 1]) {
+//        return 1;
+//    }
+//    else {
+//        return 0;
+//    }
+//}
+//int findPeakElement(int* nums, int numsLen) {
+//    // write code here
+//    if (checkpeak(0, nums, numsLen) == 1) {
+//        return 0;
+//    }
+//    if (checkpeak(numsLen - 1, nums, numsLen) == 1) {
+//        return numsLen - 1;
+//    }
+//    int mid = numsLen / 2;
+//    int len = numsLen / 2;
+//    while (checkpeak(mid, nums, numsLen) != 1) {
+//        printf("%d\n", mid);
+//        if (nums[mid - 1] > nums[mid]) {
+//            len = len / 2 + len % 2;
+//            mid = mid - len;
+//            if (len == 0) {
+//                mid--;
+//                break;
+//            }
+//
+//        }
+//        else {
+//            len = len / 2 + len % 2;
+//            mid = mid + len;
+//            if (len == 0) {
+//                mid++;
+//                break;
+//            }
+//
+//        }
+//    }
+//    //if(numsLen == 200000) {
+//   // printf("%d %d %d",nums[9994],nums[9995],nums[9996]);}
+//    return mid;
+//
+//
+//}

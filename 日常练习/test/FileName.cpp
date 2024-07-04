@@ -735,3 +735,225 @@
 //
 //
 //}
+
+//二叉树前序
+/**
+ * struct TreeNode {
+ *	int val;
+ *	struct TreeNode *left;
+ *	struct TreeNode *right;
+ * };
+ */
+ /**
+  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+  *
+  *
+  * @param root TreeNode类
+  * @return int整型一维数组
+  * @return int* returnSize 返回数组行数
+  */
+//#include <limits.h>
+//int* a;
+//int* preorderTraversal(struct TreeNode* root, int* returnSize) {
+//    int b = 0;
+//    if (*returnSize == 0) {
+//        a = (int*)malloc(100 * sizeof(int));
+//        b = 1;
+//        if (root == NULL) {
+//            return a;
+//        }
+//        else {
+//            a[0] = root->val;
+//            (*returnSize)++;
+//
+//        }
+//    }
+//    if (root->left != NULL) {
+//        a[*returnSize] = root->left->val;
+//        (*returnSize)++;
+//        preorderTraversal(root->left, returnSize);
+//    }
+//    if (root->right != NULL) {
+//        a[*returnSize] = root->right->val;
+//        (*returnSize)++;
+//        preorderTraversal(root->right, returnSize);
+//    }
+//    if (b == 1) {
+//        return a;
+//    }
+//    else {
+//        return NULL;
+//    }
+//
+//}
+
+//二叉树中序
+/**
+ * struct TreeNode {
+ *	int val;
+ *	struct TreeNode *left;
+ *	struct TreeNode *right;
+ * };
+ */
+ /**
+  * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+  *
+  *
+  * @param root TreeNode类
+  * @return int整型一维数组
+  * @return int* returnSize 返回数组行数
+  */
+//int* a;
+//int* inorderTraversal(struct TreeNode* root, int* returnSize) {
+//
+//    if (*returnSize == 0) {
+//        a = (int*)malloc(1000 * sizeof(int));
+//        if (root == NULL) {
+//            return a;
+//        }
+//    }
+//    if (root->left != NULL) {
+//        inorderTraversal(root->left, returnSize);
+//
+//    }
+//    a[*returnSize] = root->val;
+//    (*returnSize)++;
+//
+//    if (root->right != NULL) {
+//        inorderTraversal(root->right, returnSize);
+//
+//    }
+//    return a;
+
+
+    // write code here
+//}
+//双栈形成队列
+//int arr[1000];
+//int a = 0;
+//int b = 0;
+//typedef struct stack {
+//    int(*array)[1000];
+//    int* top;
+//    int* botton;
+//} stack;
+//
+//stack one = { &arr,&a,&b };
+//stack two = { &arr,&b,&a };
+//
+//
+//
+//void push(int node) {
+//    b = b % 1000;
+//    arr[b] = node;
+//    b++;
+//
+//}
+//
+///**
+// * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+// *
+// *
+// * @param 无
+// * @return int整型
+// */
+//int pop() {
+//    a = a % 1000;
+//    int c = a;
+//    a++;
+//    return arr[c];
+//}
+
+
+//栈最小
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ *
+ * @param value int整型
+ * @return 无
+ */
+//struct Stack {
+//    int val;
+//    struct Stack* next;
+//    struct Stack* prev;
+//};
+//typedef struct Stack stack;
+//
+//stack* topp = NULL;
+//int minn = 100000;
+//
+//void push(int value) {
+//    if (value < minn) {
+//        minn = value;
+//    }
+//    if (topp == NULL) {
+//        topp = (stack*)malloc(sizeof(stack));
+//        topp->prev = NULL;
+//        topp->prev = NULL;
+//        topp->val = value;
+//
+//    }
+//    else {
+//        stack* tmp;
+//        tmp = (stack*)malloc(sizeof(stack));
+//        tmp->prev = topp;
+//        tmp->val = value;
+//        topp->next = tmp;
+//        topp = tmp;
+//    }
+//
+//    // write code here
+//
+//}
+//
+///**
+// * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+// *
+// *
+// * @param 无
+// * @return 无
+// */
+//void pop() {
+//    stack* tmp;
+//    tmp = topp;
+//    topp = topp->prev;
+//    topp->next = NULL;
+//    if (tmp->val == minn) {
+//        minn = topp->val;
+//        stack* a = tmp->prev;
+//        while (a->prev != NULL) {
+//            a = a->prev;
+//            if (a->val < minn) {
+//                minn = a->val;
+//            }
+//
+//        }
+//    }
+//}
+//
+///**
+// * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+// *
+// *
+// * @param 无
+// * @return int整型
+// */
+//int top() {
+//    return topp->val;
+//    // write code here
+//
+//}
+//
+///**
+// * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+// *
+// *
+// * @param 无
+// * @return int整型
+// */
+//int min() {
+//    return minn;
+//    // write code here
+//
+//}

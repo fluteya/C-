@@ -957,3 +957,81 @@
 //    // write code here
 //
 //}
+
+/**
+ * 代码中的类名、方法名、参数名已经指定，请勿修改，直接返回方法规定的值即可
+ *
+ *
+ * @param num int整型一维数组
+ * @param numLen int num数组长度
+ * @return int整型二维数组
+ * @return int* returnSize 返回数组行数
+ * @return int** returnColumnSizes 返回数组列数
+ */
+//没重复按字典顺序全排列
+//#include <string.h>
+//int count_size(int a) {
+//    int size = 1;
+//    while (a > 1) {
+//        size *= a;
+//        a--;
+//    }
+//    return a;
+//}
+//void order(int* b, int sz) {
+//    for (int a = sz - 1; a > 0; a--) {
+//        int c = a;
+//        while (c > 0) {
+//            int tmp = 0;
+//            if (b[c] < b[c - 1]) {
+//                int tmp = 0;
+//                tmp = b[c];
+//                b[c] = b[c - 1];
+//                b[c - 1] = tmp;
+//
+//            }
+//            c--;
+//        }
+//    }
+//
+//}
+//#include <stdlib.h>
+//int** permute(int* num, int numLen, int* returnSize, int** returnColumnSizes) {
+//    int size = count_size(numLen);
+//    int** a = (int**)malloc(size * sizeof(int*));
+//    if (size == 1) {
+//        int* col = (int*)malloc(numLen * sizeof(int));
+//        memcpy(col, num, sizeof(int));
+//        a[0] = col;
+//        *returnSize = 1;
+//        int* column = (int*)malloc(sizeof(int));
+//        column[0] = 1;
+//        returnColumnSizes[0] = col;
+//        return a;
+//    }
+//    else {
+//        for (int x = 0; x < numLen; x++) {
+//            int* y = (int*)malloc((numLen - 1) * sizeof(int));
+//            int z = 0;
+//            while (z > )
+//        }
+//
+//
+//        return a;
+//    }
+}
+// for(int b = 0; b < 2;b++) {
+//     int* col = (int*) malloc(numLen * sizeof(int));
+//     a[b] =col;
+
+// }
+
+// *returnSize = 2;
+// for(int b = 0; b < 2;b++) {
+//     int* col = (int*) malloc(2 * sizeof(int));
+//     col[0] = 2;
+//     col[1] = 2;
+//     returnColumnSizes[b]= col ;
+
+
+// write code here
